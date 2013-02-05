@@ -2,6 +2,7 @@ class TodosController < ApplicationController
   # GET /todos
   # GET /todos.json
   def index
+    Todo.connection.execute("SELECT sleep(10)")
     @todos = Todo.all
 
     respond_to do |format|
