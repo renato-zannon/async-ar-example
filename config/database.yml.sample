@@ -1,5 +1,5 @@
 development:
-  adapter: em_mysql
+  adapter: em_mysql2
   database: async-test
   pool: 5
   timeout: 5000
